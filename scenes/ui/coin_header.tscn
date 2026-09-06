@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bomrynnmiwxmy"]
 
 [ext_resource type="Texture2D" uid="uid://c536s1yrm3m87" path="res://assets/coin.png" id="1_c7jne"]
-[ext_resource type="Script" uid="uid://cup15fltiwh6x" path="res://scriptscoin_header.gd" id="1_g6b5k"]
+[ext_resource type="Script" uid="uid://cup15fltiwh6x" path="res://scripts/ui/coin_header.gd" id="1_g6b5k"]
 
 [node name="CoinHeader" type="HBoxContainer"]
 alignment = 1
