@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://bmgvnb0rttayf"]
+
+[node name="RichTextLabel" type="RichTextLabel" unique_id=1729968952]
+offset_right = 556.0
+offset_bottom = 45.0
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "[center][rainbow freq=0.5 sat=0.9 val=1.0][wave amp=20 freq=3]코인 수집기[/wave][/rainbow][/center]"

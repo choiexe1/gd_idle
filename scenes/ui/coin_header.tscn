@@ -1,18 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://bomrynnmiwxmy"]
+[gd_scene format=3 uid="uid://bomrynnmiwxmy"]
 
 [ext_resource type="Texture2D" uid="uid://c536s1yrm3m87" path="res://assets/coin.png" id="1_c7jne"]
 [ext_resource type="Script" uid="uid://cup15fltiwh6x" path="res://scripts/ui/coin_header.gd" id="1_g6b5k"]
 
-[node name="CoinHeader" type="HBoxContainer"]
+[node name="CoinHeader" type="HBoxContainer" unique_id=2127279078]
 alignment = 1
 script = ExtResource("1_g6b5k")
 
-[node name="CoinIcon" type="TextureRect" parent="."]
+[node name="CoinIcon" type="TextureRect" parent="." unique_id=1240304261]
 texture_filter = 1
 layout_mode = 2
 texture = ExtResource("1_c7jne")
 expand_mode = 2
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1179907281]
 layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_font_sizes/font_size = 24
 text = "0"

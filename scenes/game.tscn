@@ -1,15 +1,16 @@
-[gd_scene load_steps=9 format=3 uid="uid://c2e1ep4tn5eaa"]
+[gd_scene format=3 uid="uid://c2e1ep4tn5eaa"]
 
 [ext_resource type="Script" uid="uid://bf3on52kvwbqx" path="res://scripts/game_state.gd" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bomrynnmiwxmy" path="res://scenes/ui/coin_header.tscn" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://c1ygrkqwgpsc7" path="res://scenes/ui/collect_coin_button.tscn" id="3_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://de1kyiikrj4y5" path="res://scenes/ui/inventory.tscn" id="4_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://cq7m3nvxpe8dl" path="res://scenes/ui/upgrade_panel.tscn" id="5_upgpnl"]
+[ext_resource type="Script" uid="uid://bvjomvqm44fk1" path="res://scripts/upgrades/upgrade.gd" id="6_0tnpc"]
 [ext_resource type="Resource" uid="uid://bqw3n8xkp2vld" path="res://resources/upgrades/sharper_click.tres" id="6_upg1"]
 [ext_resource type="Resource" uid="uid://cn5vk8rqx3mfe" path="res://resources/upgrades/gilded_touch.tres" id="7_upg2"]
 [ext_resource type="Resource" uid="uid://dp4wq7nmc2xjb" path="res://resources/upgrades/alchemists_pact.tres" id="8_upg3"]
 
-[node name="Game" type="Control"]
+[node name="Game" type="Control" unique_id=1298586831]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,7 +19,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yqjtg")
 
-[node name="Padding" type="MarginContainer" parent="."]
+[node name="Padding" type="MarginContainer" parent="." unique_id=22933541]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -30,16 +31,16 @@ theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Padding"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Padding" unique_id=1029288449]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/separation = 16
 
-[node name="Panel" type="Panel" parent="Padding/HBoxContainer"]
+[node name="Panel" type="Panel" parent="Padding/HBoxContainer" unique_id=1291215778]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="Padding/HBoxContainer/Panel"]
+[node name="MarginContainer" type="MarginContainer" parent="Padding/HBoxContainer/Panel" unique_id=327256045]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -52,28 +53,28 @@ theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Padding/HBoxContainer/Panel/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Padding/HBoxContainer/Panel/MarginContainer" unique_id=568479049]
 layout_mode = 2
 theme_override_constants/separation = 16
 
-[node name="CoinHeader" parent="Padding/HBoxContainer/Panel/MarginContainer/VBoxContainer" instance=ExtResource("2_lnu2h")]
+[node name="CoinHeader" parent="Padding/HBoxContainer/Panel/MarginContainer/VBoxContainer" unique_id=910765936 instance=ExtResource("2_lnu2h")]
 layout_mode = 2
 
-[node name="Spacer" type="Control" parent="Padding/HBoxContainer/Panel/MarginContainer/VBoxContainer"]
+[node name="Spacer" type="Control" parent="Padding/HBoxContainer/Panel/MarginContainer/VBoxContainer" unique_id=837802053]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="CollectCoinButton" parent="Padding/HBoxContainer/Panel/MarginContainer/VBoxContainer" instance=ExtResource("3_lbhrr")]
+[node name="CollectCoinButton" parent="Padding/HBoxContainer/Panel/MarginContainer/VBoxContainer" unique_id=379618298 instance=ExtResource("3_lbhrr")]
 layout_mode = 2
 
-[node name="Inventory" parent="Padding/HBoxContainer/Panel/MarginContainer/VBoxContainer" instance=ExtResource("4_lbhrr")]
+[node name="Inventory" parent="Padding/HBoxContainer/Panel/MarginContainer/VBoxContainer" unique_id=1621717486 instance=ExtResource("4_lbhrr")]
 layout_mode = 2
 
-[node name="Panel2" type="Panel" parent="Padding/HBoxContainer"]
+[node name="Panel2" type="Panel" parent="Padding/HBoxContainer" unique_id=504839359]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="MarginContainer2" type="MarginContainer" parent="Padding/HBoxContainer/Panel2"]
+[node name="MarginContainer2" type="MarginContainer" parent="Padding/HBoxContainer/Panel2" unique_id=129084471]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -85,15 +86,15 @@ theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Padding/HBoxContainer/Panel2/MarginContainer2"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Padding/HBoxContainer/Panel2/MarginContainer2" unique_id=1224070187]
 layout_mode = 2
 theme_override_constants/separation = 12
 
-[node name="Title" type="Label" parent="Padding/HBoxContainer/Panel2/MarginContainer2/VBoxContainer"]
+[node name="Title" type="Label" parent="Padding/HBoxContainer/Panel2/MarginContainer2/VBoxContainer" unique_id=158845323]
 layout_mode = 2
-text = "업그레이드"
 theme_override_font_sizes/font_size = 18
+text = "업그레이드"
 
-[node name="UpgradePanel" parent="Padding/HBoxContainer/Panel2/MarginContainer2/VBoxContainer" instance=ExtResource("5_upgpnl")]
+[node name="UpgradePanel" parent="Padding/HBoxContainer/Panel2/MarginContainer2/VBoxContainer" unique_id=574857435 instance=ExtResource("5_upgpnl")]
 layout_mode = 2
-upgrades = Array[Resource]([ExtResource("6_upg1"), ExtResource("7_upg2"), ExtResource("8_upg3")])
+upgrades = Array[ExtResource("6_0tnpc")]([ExtResource("6_upg1"), ExtResource("7_upg2"), ExtResource("8_upg3")])
