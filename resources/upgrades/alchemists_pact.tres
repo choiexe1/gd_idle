@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Upgrade" load_steps=3 format=3 uid="uid://dp4wq7nmc2xjb"]
+
+[ext_resource type="Script" path="res://scripts/upgrades/upgrade.gd" id="1_upg"]
+[ext_resource type="Texture2D" uid="uid://cbrkle1cve2aa" path="res://assets/red_potion.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_upg")
+upgrade_name = "연금술사의 계약"
+description = "클릭당 코인 +25 · 10회까지"
+icon = ExtResource("2_icon")
+base_cost = 1500
+cost_growth = 2.2
+coin_output_bonus = 25
+max_level = 10

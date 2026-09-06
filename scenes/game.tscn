@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2e1ep4tn5eaa"]
+[gd_scene load_steps=9 format=3 uid="uid://c2e1ep4tn5eaa"]
 
 [ext_resource type="Script" uid="uid://bf3on52kvwbqx" path="res://scripts/game_state.gd" id="1_yqjtg"]
 [ext_resource type="PackedScene" uid="uid://bomrynnmiwxmy" path="res://scenes/ui/coin_header.tscn" id="2_lnu2h"]
 [ext_resource type="PackedScene" uid="uid://c1ygrkqwgpsc7" path="res://scenes/ui/collect_coin_button.tscn" id="3_lbhrr"]
 [ext_resource type="PackedScene" uid="uid://de1kyiikrj4y5" path="res://scenes/ui/inventory.tscn" id="4_lbhrr"]
+[ext_resource type="PackedScene" uid="uid://cq7m3nvxpe8dl" path="res://scenes/ui/upgrade_panel.tscn" id="5_upgpnl"]
+[ext_resource type="Resource" uid="uid://bqw3n8xkp2vld" path="res://resources/upgrades/sharper_click.tres" id="6_upg1"]
+[ext_resource type="Resource" uid="uid://cn5vk8rqx3mfe" path="res://resources/upgrades/gilded_touch.tres" id="7_upg2"]
+[ext_resource type="Resource" uid="uid://dp4wq7nmc2xjb" path="res://resources/upgrades/alchemists_pact.tres" id="8_upg3"]
 
 [node name="Game" type="Control"]
 layout_mode = 3
@@ -70,9 +74,12 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="MarginContainer2" type="MarginContainer" parent="Padding/HBoxContainer/Panel2"]
-layout_mode = 0
-offset_right = 552.0
-offset_bottom = 55.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
@@ -80,3 +87,13 @@ theme_override_constants/margin_bottom = 16
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Padding/HBoxContainer/Panel2/MarginContainer2"]
 layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Padding/HBoxContainer/Panel2/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+text = "업그레이드"
+theme_override_font_sizes/font_size = 18
+
+[node name="UpgradePanel" parent="Padding/HBoxContainer/Panel2/MarginContainer2/VBoxContainer" instance=ExtResource("5_upgpnl")]
+layout_mode = 2
+upgrades = Array[Resource]([ExtResource("6_upg1"), ExtResource("7_upg2"), ExtResource("8_upg3")])

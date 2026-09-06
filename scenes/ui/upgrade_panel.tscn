@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cq7m3nvxpe8dl"]
+
+[ext_resource type="Script" path="res://scripts/upgrades/upgrade_panel.gd" id="1_upgpnl"]
+
+[node name="UpgradePanel" type="VBoxContainer"]
+theme_override_constants/separation = 8
+script = ExtResource("1_upgpnl")

@@ -14,7 +14,7 @@ func _ready() -> void:
 		return
 
 	items.resize(SLOT_COUNT)
-	add_item(load("res://resources/healing_potion.tres"), 5)
+	add_item(load("res://resources/items/healing_potion.tres"), 5)
 
 func _build_slots() -> void:
 	for child in get_children():

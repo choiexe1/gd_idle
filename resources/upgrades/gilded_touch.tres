@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Upgrade" load_steps=3 format=3 uid="uid://cn5vk8rqx3mfe"]
+
+[ext_resource type="Script" path="res://scripts/upgrades/upgrade.gd" id="1_upg"]
+[ext_resource type="Texture2D" uid="uid://c536s1yrm3m87" path="res://assets/coin.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_upg")
+upgrade_name = "황금 손"
+description = "클릭당 코인 +5"
+icon = ExtResource("2_icon")
+base_cost = 120
+cost_growth = 1.8
+coin_output_bonus = 5
+max_level = 0

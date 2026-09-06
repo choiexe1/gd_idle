@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Upgrade" load_steps=3 format=3 uid="uid://bqw3n8xkp2vld"]
+
+[ext_resource type="Script" path="res://scripts/upgrades/upgrade.gd" id="1_upg"]
+[ext_resource type="Texture2D" uid="uid://blc8xa8xoriy8" path="res://assets/sword_01.png" id="2_icon"]
+
+[resource]
+script = ExtResource("1_upg")
+upgrade_name = "날카로운 손끝"
+description = "클릭당 코인 +1"
+icon = ExtResource("2_icon")
+base_cost = 10
+cost_growth = 1.5
+coin_output_bonus = 1
+max_level = 0
