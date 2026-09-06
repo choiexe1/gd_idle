@@ -1,10 +1,12 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1ygrkqwgpsc7"]
+[gd_scene load_steps=3 format=3 uid="uid://c1ygrkqwgpsc7"]
 
 [ext_resource type="Texture2D" uid="uid://c536s1yrm3m87" path="res://assets/coin.png" id="1_e24od"]
+[ext_resource type="Script" uid="uid://bkldx4012bf6r" path="res://scenes/ui/collect_coin_button.gd" id="1_myffj"]
 
 [node name="CollectCoinButton" type="Button"]
 custom_minimum_size = Vector2(200, 64)
 tooltip_text = "클릭 시 코인을 수집합니다."
+script = ExtResource("1_myffj")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1

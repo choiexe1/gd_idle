@@ -1,4 +1,10 @@
-class_name GameState extends Node
+extends Node
 
-var coin := 0
+signal coin_changed(coin: int)
+
+var coin := 0:
+	set(value):
+		coin = value
+		coin_changed.emit(coin)
+
 var coin_output := 1
