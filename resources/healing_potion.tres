@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Potion" load_steps=3 format=3 uid="uid://dlkkc0vi4rhte"]
+
+[ext_resource type="Script" uid="uid://ciluijku2pta1" path="res://scripts/items/potion.gd" id="1_ajlk0"]
+[ext_resource type="Texture2D" uid="uid://cbrkle1cve2aa" path="res://assets/red_potion.png" id="1_ga3l2"]
+
+[resource]
+script = ExtResource("1_ajlk0")
+amount = 5.0
+item_name = "힐링 포션"
+description = "+5 체력 회복"
+icon = ExtResource("1_ga3l2")
+metadata/_custom_type_script = "uid://ciluijku2pta1"

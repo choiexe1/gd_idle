@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Weapon" load_steps=3 format=3 uid="uid://d2tp7i1fauhog"]
+
+[ext_resource type="Texture2D" uid="uid://blc8xa8xoriy8" path="res://assets/sword_01.png" id="1_tchob"]
+[ext_resource type="Script" uid="uid://dqufa6c7ru4n7" path="res://scripts/items/weapon.gd" id="2_pofhq"]
+
+[resource]
+script = ExtResource("2_pofhq")
+attack_damage = 8.0
+attack_speed = 1.2
+item_name = "장검"
+description = "+8 공격 +1.2 공격 속도"
+icon = ExtResource("1_tchob")
